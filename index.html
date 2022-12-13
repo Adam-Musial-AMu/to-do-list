@@ -12,20 +12,34 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400&display=swap"
         rel="stylesheet">
-        <link href="css/style.css" rel="stylesheet">
-    <script defer src="js/script.js"></script> 
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/container.css" rel="stylesheet">
+    <link href="css/section.css" rel="stylesheet">
+    <script defer src="js/script.js"></script>
     <title>To do list</title>
 </head>
 
-<body>
-    <h1>Lista zadań</h1>
-    <h2>Dodaj nowe zadanie</h2>
-    <form class="js-form">
-        <input class="js-newTask">
-        <button>Dodaj zadanie</button>
-    </form>
-    <h2>Lista zadań</h2>
-<ul class="js-tasks"></ul>
+<body class="body">
+    <main class="container">
+        <header class="container__header">
+            <h1>Lista zadań</h1>
+        </header>
+        <section class="section">
+            <h2 class="section__name">Dodaj nowe zadanie</h2>
+            <div class="section__content">
+                <form class="js-form">
+                    <input class="js-newTask" placeholder="Co jest do zrobienia?">
+                    <button>Dodaj zadanie</button>
+                </form>
+            </div>
+        </section>
+        <section class="section">
+            <h2 class="section__name">Lista zadań</h2>
+            <div class="section__content">
+                <ul class="js-tasks"></ul>
+            </div>  
+        </section>
+    </main>
 </body>
 
 </html>
