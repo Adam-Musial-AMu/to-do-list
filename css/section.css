@@ -35,3 +35,7 @@
     color: white;
     border: none;
 }
+
+.section__list {
+    padding-left: 0;
+}
