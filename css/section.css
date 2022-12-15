@@ -27,6 +27,7 @@
 
 .section__input {
     padding: 10px;
+    border: 2px solid #ddd;
 }
 
 .section__addButton {
