@@ -32,9 +32,17 @@
 
 .section__addButton {
     padding: 10px;
-    background-color: teal;
+    background-color: hsl(180, 100%, 25%);
     color: white;
     border: none;
+}
+
+.section__addButton:hover {
+    background-color: hsl(180, 100%, 30%);
+}
+
+.section__addButton:active {
+    background-color: hsl(180, 100%, 35%);
 }
 
 .section__list {
