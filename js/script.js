@@ -1,5 +1,5 @@
 {
-    const tasks = [
+    let tasks = [
         {
             content: "Zrobić zadanie domowe",
             done: false,
@@ -11,19 +11,27 @@
     ];
 
     const addNewTask = (newTaskContent) => {
-        tasks.push({
-            content: newTaskContent,
-        });
+        tasks = [
+            ...tasks,
+            { content: newTaskContent },
+        ];
         render();
     };
 
     const removeTask = (taskIndex) => {
-        tasks.splice(taskIndex, 1);
+        tasks = [
+            ...tasks.slice(0, taskIndex),
+            ...tasks.slice(taskIndex + 1),
+        ];
         render();
     };
 
     const toggleTaskDone = (taskIndex) => {
-        tasks[taskIndex].done = !tasks[taskIndex].done;
+        tasks = [
+            ...tasks.slice(0, taskIndex),
+            { ...tasks[taskIndex], done: !tasks[taskIndex].done},
+            ...tasks.slice(taskIndex + 1),
+        ];
         render();
     };
 
@@ -51,7 +59,7 @@
 
         for (const task of tasks) {
             htmlString +=
-        `<li class="list">
+                `<li class="list">
             <button class="list__button list__button--done js-done">
             ${task.done ? "✔" : ""}
             </button>
