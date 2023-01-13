@@ -6,8 +6,13 @@
 .buttons__button {
     border: none;
     margin: 0 0 0 20px;
-    color: teal;
+    color: hsl(180, 100%, 25%);
     background-color: transparent;
+}
+
+.buttons__button:hover {
+    color: hsl(180, 100%, 35%);
+    transition: 1s;
 }
 
 

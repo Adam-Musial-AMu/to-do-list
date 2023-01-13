@@ -35,10 +35,12 @@
     background-color: hsl(180, 100%, 25%);
     color: white;
     border: none;
+    transition: 0.5s;
 }
 
 .section__addButton:hover {
     background-color: hsl(180, 100%, 30%);
+    transform: scale(1.1);
 }
 
 .section__addButton:active {

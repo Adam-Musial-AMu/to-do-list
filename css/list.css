@@ -29,13 +29,14 @@
 
 .list__button:hover {
     background-color: hsl(348, 83%, 57%);
+    transition: 1s;
 }
 
 .list__button:active {
     background-color: hsl(348, 83%, 67%);
     border: 3px solid hsl(348, 92%, 15%);
 }
-    
+
 .list__button--done {
     background-color: hsl(120, 100%, 20%);
 }
