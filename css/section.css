@@ -9,8 +9,8 @@
 }
 
 .section__content {
-    border-top: 1px solid #ddd;
     padding: 20px;
+    border-top: 1px solid #ddd;
 }
 
 .section__form {
@@ -47,4 +47,17 @@
 
 .section__list {
     padding-left: 0;
+}
+
+.section__header {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-between;
+    grid-gap: 20px;
+    align-items: center;
+    padding: 20px;
+}
+
+.section__listName {
+    margin: 0;
 }

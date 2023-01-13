@@ -1,0 +1,15 @@
+.buttons {
+display: flex;
+flex-wrap: wrap;
+}
+
+.buttons__button {
+border: none;
+margin: 0 0 0 20px;
+color: teal;
+background-color: transparent;
+}
+
+.buttons__button:disabled {
+color: #ccc;
+}

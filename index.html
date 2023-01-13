@@ -17,6 +17,7 @@
     <link href="css/container.css" rel="stylesheet">
     <link href="css/section.css" rel="stylesheet">
     <link href="css/header.css" rel="stylesheet">
+    <link href="css/buttons.css" rel="stylesheet">
     <link rel="icon" href="images/icon_AM.png">
     <meta property="og:image" content="images/share.png">
     <meta property="og:description" content="Plan the path to your success!">
@@ -39,7 +40,14 @@
             </div>
         </section>
         <section class="section">
-            <h2 class="section__name">Lista zadań</h2>
+            <header class="section__header">
+                <h2 class="section__listName">Lista zadań</h2>
+                <div class="buttons js-buttons">
+                    <button class="buttons__button js-toggleHideDoneTasks"> Ukryj ukończone</button>
+                    <button class="buttons__button js-markAllDone"> Ukończ wszystkie</button>
+                </div>
+            </header>
+
             <div class="section__content">
                 <ul class="section__list js-tasks"></ul>
             </div>
