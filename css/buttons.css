@@ -1,15 +1,23 @@
 .buttons {
-display: flex;
-flex-wrap: wrap;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .buttons__button {
-border: none;
-margin: 0 0 0 20px;
-color: teal;
-background-color: transparent;
+    border: none;
+    margin: 0 0 0 20px;
+    color: teal;
+    background-color: transparent;
+}
+
+
+@media (max-width: 767px) {
+    .buttons__button {
+        flex-basis: 100%;
+        margin: 10px;
+    }
 }
 
 .buttons__button:disabled {
-color: #ccc;
+    color: #ccc;
 }
