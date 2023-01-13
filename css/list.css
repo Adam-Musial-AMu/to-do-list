@@ -7,6 +7,10 @@
     align-items: center;
 }
 
+.list--hidden {
+    display: none;
+}
+
 .list__taskName {
     word-break: break-word;
 }
