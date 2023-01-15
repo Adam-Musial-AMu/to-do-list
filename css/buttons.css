@@ -8,11 +8,11 @@
     margin: 0 0 0 20px;
     color: hsl(180, 100%, 25%);
     background-color: transparent;
+    transition: 1s;
 }
 
 .buttons__button:hover {
     color: hsl(180, 100%, 35%);
-    transition: 1s;
 }
 
 
