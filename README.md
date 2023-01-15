@@ -14,4 +14,4 @@ A simple but useful application for scheduling and executing tasks. It was creat
 - @media queries
 
 ## Interface view
-![TO-DO-LIST](images/to_do_list.gif)
+![TO-DO-LIST](images/interface_view.png)
